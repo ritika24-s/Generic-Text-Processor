@@ -1,0 +1,20 @@
+Steps to follow for any NLP tasks -
+- Load text file 
+    - memory mapping for large files
+    - read directly for normal files
+    - Read text from file
+        - from markup/ xml file
+        - pdf / docx / txt
+
+- Preprocessing
+    - Translating characters from different language to English
+    - Decode Unicode characters to normalised form (eg UTF8)
+    - Handling of domain specific words, phrases or acronyms
+    - Tokenise text 
+    - Convert to lower text to make the text standardised (optional depending on the type of text)
+    - Remove punctuation
+    - Removing stopwords
+    - Correcting typos
+    - Stemming and Lemmatisation
+
+- Vectorisation (Feature Extraction)
