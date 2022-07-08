@@ -1,19 +1,19 @@
 # Class to demonstrate the functions of nltk
 
 import nltk
+# uncomment while running for the first time
 # nltk.download()
 import string
 import re
 
-class nltk:
+class preprocesser:
     def __init__(self, filename) -> None:
         self.load_file(filename)
-        self.close_file()
         self.tokenise()
         self.lower_case()
         self.remove_punctuation()
         self.remove_stopwords()
-        self.stemming()
+        # self.stemming()
 
     # load the file
     def load_file(self, filename):
@@ -58,10 +58,10 @@ class nltk:
     def remove_stopwords(self):
         # remove stop words
         from nltk.corpus import stopwords
-        stop_words = stopwords.words("english")
+        self.stop_words = stopwords.words("english")
 
-        stop_words += ['ive','nt', 'ï']
-        self.tokens = [words for words in self.tokens if words not in stop_words]
+        self.stop_words += ['ive','nt', 'ï']
+        self.tokens = [words for words in self.tokens if words not in self.stop_words]
         # print(sorted(self.tokens))
 
     # find relevant stem of each word
@@ -71,5 +71,6 @@ class nltk:
         self.stems = [porter.stem(word) for word in self.tokens]
         print(sorted(self.stems))
         
-filename = "metamorphosis_clean.txt"
-text = nltk(filename)
+filename = "File\metamorphosis_clean.txt"
+
+#text = preprocesser(filename)

@@ -7,6 +7,6 @@ Files -
 
 -- text_nltk.py - contains code on preprocessing a text file using NLTK library
 
--- todo - lists all the steps to follow while doing any MLP related tasks
+-- todo - lists all the steps to follow while doing any NLP related tasks
 
 -- requirements.txt - contains list of all installed libraries

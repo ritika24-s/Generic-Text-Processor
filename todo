@@ -18,3 +18,9 @@ Steps to follow for any NLP tasks -
     - Stemming and Lemmatisation
 
 - Vectorisation (Feature Extraction)
+    - create an instance of the vectorizer (count, tf-idf, hashing)
+    - use the preprocessing document or inbuilt parameters of the vectorizer class
+    - fit the document so vectorizer can build the vocabulary
+    - summarize by using vectorizer specific functions to better understand the document parsed
+    - transform the document
+    - summarize encoded vector
